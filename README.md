@@ -1,1 +1,3 @@
-This is a scraper that runs on [Morph](https://morph.io). To get started [see the documentation](https://morph.io/documentation)
+Measures of Consumer Price Inflation
+
+From (Consumer Price Inflation)[http://www.rba.gov.au/inflation/measures-cpi.html]
