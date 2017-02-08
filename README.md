@@ -1,3 +1,3 @@
-Measures of Consumer Price Inflation
+##Measures of Consumer Price Inflation
 
-From (Consumer Price Inflation)[http://www.rba.gov.au/inflation/measures-cpi.html]
+From [Consumer Price Inflation](http://www.rba.gov.au/inflation/measures-cpi.html)
