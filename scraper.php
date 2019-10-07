@@ -3,11 +3,11 @@
 // including some code snippets below that you should find helpful
 
 require 'scraperwiki.php';
-require 'scraperwiki/simple_html_dom.php';
-//
+require 'simple_html_dom.php';
+
 // // Read in a page
 $html = scraperwiki::scrape("http://www.rba.gov.au/inflation/measures-cpi.html");
-//
+
 // // Find something on the page using css selectors
 $dom = new simple_html_dom();
 $dom->load($html);
@@ -39,7 +39,7 @@ foreach ($table as $row)
 			$month = $month->plaintext;
 		}
 
-		$date = $fy[$int] . '-' . date("m", strtotime($month));
+		$date = $fy[$int] . '-' . date('m', strtotime($month));
 
 		// Consumer price index (All groups)
 		$cpi = $row->find('td', 0)->plaintext;
@@ -77,4 +77,4 @@ foreach ($data as $row)
 // All that matters is that your final data is written to an SQLite database
 // called "data.sqlite" in the current working directory which has at least a table
 // called "data".
-?>
+
